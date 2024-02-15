@@ -32,7 +32,7 @@ required_restarts() {
         return 1
     }
 
-    Uncomment the following lines if needed:
+   # Uncomment the following lines if needed:
     sudo systemctl enable docker
     sudo systemctl enable nginx
     sudo systemctl restart docker
