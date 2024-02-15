@@ -41,6 +41,7 @@ required_restarts() {
 # Function to deploy the Django app
 deploy() {
     echo "Building and deploying the Django app..."
+    cd django-notes-app
     docker build -t notes-app . && docker-compose up -d || {
         echo "Failed to build and deploy the app."
         return 1
